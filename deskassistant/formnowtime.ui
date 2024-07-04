@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Formnowtime</class>
+ <widget class="QWidget" name="Formnowtime">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>444</width>
+    <height>445</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>444</width>
+    <height>445</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>444</width>
+    <height>445</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>现在时间</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color:#F5F2E9</string>
+  </property>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

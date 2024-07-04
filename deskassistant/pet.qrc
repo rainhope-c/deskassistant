@@ -1,0 +1,12 @@
+<RCC>
+    <qresource prefix="/">
+        <file>pet_icons/com.png</file>
+        <file>pet_icons/stop.png</file>
+        <file>pet_icons/left.png</file>
+        <file>pet_pix/crying.png</file>
+        <file>pet_pix/dancing.png</file>
+        <file>pet_pix/playing.png</file>
+        <file>pet_pix/smiling.png</file>
+        <file>pet_pix/studying.png</file>
+    </qresource>
+</RCC>

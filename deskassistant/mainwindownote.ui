@@ -1,0 +1,382 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindownote</class>
+ <widget class="QMainWindow" name="MainWindownote">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>750</width>
+    <height>500</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>750</width>
+    <height>500</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>750</width>
+    <height>500</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>记事本</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color:#F5F2E9</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QPushButton" name="pushButton">
+    <property name="geometry">
+     <rect>
+      <x>680</x>
+      <y>0</y>
+      <width>71</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>得意黑</family>
+      <pointsize>12</pointsize>
+      <italic>true</italic>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton
+{
+    background-repeat:no-repeat;
+    background-color:#EFEEE9 ;
+    background-image: url(:/mainIcons/首页 (4).png);
+    background-position:top left center
+
+ } </string>
+    </property>
+    <property name="text">
+     <string>返回主页</string>
+    </property>
+   </widget>
+   <widget class="QTextEdit" name="textEdit">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>681</width>
+      <height>471</height>
+     </rect>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::ClickFocus</enum>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>750</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>文件</string>
+    </property>
+    <addaction name="separator"/>
+    <addaction name="action_open"/>
+    <addaction name="actionlingcunwei"/>
+    <addaction name="actiontuichu"/>
+    <addaction name="actionnew"/>
+    <addaction name="actionsave"/>
+    <addaction name="actionwindow"/>
+    <addaction name="actionpicture"/>
+   </widget>
+   <widget class="QMenu" name="menuedit">
+    <property name="title">
+     <string>工具</string>
+    </property>
+    <addaction name="actionDateAndTime"/>
+    <addaction name="actionsearch"/>
+    <addaction name="actioncopy"/>
+    <addaction name="actioncut"/>
+    <addaction name="actionpaste"/>
+   </widget>
+   <widget class="QMenu" name="menu_2">
+    <property name="title">
+     <string>格式</string>
+    </property>
+    <addaction name="actionjuzhong"/>
+    <addaction name="actionzuo"/>
+    <addaction name="actionyou"/>
+   </widget>
+   <widget class="QMenu" name="menuedit_2">
+    <property name="title">
+     <string>编辑</string>
+    </property>
+    <widget class="QMenu" name="menufond">
+     <property name="geometry">
+      <rect>
+       <x>578</x>
+       <y>101</y>
+       <width>120</width>
+       <height>115</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>字体</string>
+     </property>
+     <addaction name="actionsong"/>
+     <addaction name="actionhei"/>
+     <addaction name="actionkai"/>
+    </widget>
+    <widget class="QMenu" name="menu_3">
+     <property name="title">
+      <string>加粗</string>
+     </property>
+     <addaction name="actionjiacu_2"/>
+     <addaction name="actiondejiacu_2"/>
+    </widget>
+    <widget class="QMenu" name="menu_4">
+     <property name="title">
+      <string>斜体</string>
+     </property>
+     <addaction name="actionxieti_2"/>
+     <addaction name="actiondexieti"/>
+    </widget>
+    <widget class="QMenu" name="menu_5">
+     <property name="title">
+      <string>下划线</string>
+     </property>
+     <addaction name="actionxiahuaxian_2"/>
+     <addaction name="actiondexiahuaxian"/>
+    </widget>
+    <widget class="QMenu" name="menu_6">
+     <property name="title">
+      <string>字体颜色</string>
+     </property>
+     <addaction name="actionred"/>
+     <addaction name="actionblue"/>
+     <addaction name="actiongreen"/>
+    </widget>
+    <widget class="QMenu" name="menu_7">
+     <property name="title">
+      <string>字号</string>
+     </property>
+     <addaction name="action10"/>
+     <addaction name="action12"/>
+     <addaction name="action14"/>
+     <addaction name="action1"/>
+     <addaction name="action18"/>
+     <addaction name="action20"/>
+     <addaction name="action32"/>
+     <addaction name="action64"/>
+    </widget>
+    <addaction name="menufond"/>
+    <addaction name="menu_6"/>
+    <addaction name="menu_7"/>
+    <addaction name="menu_3"/>
+    <addaction name="menu_4"/>
+    <addaction name="menu_5"/>
+   </widget>
+   <addaction name="menu"/>
+   <addaction name="menuedit"/>
+   <addaction name="menu_2"/>
+   <addaction name="menuedit_2"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="action_open">
+   <property name="text">
+    <string>打开(O)</string>
+   </property>
+  </action>
+  <action name="actionlingcunwei">
+   <property name="text">
+    <string>另存为</string>
+   </property>
+  </action>
+  <action name="actiontuichu">
+   <property name="text">
+    <string>退出</string>
+   </property>
+  </action>
+  <action name="actionnew">
+   <property name="text">
+    <string>新建(N)</string>
+   </property>
+  </action>
+  <action name="actionsave">
+   <property name="text">
+    <string>保存(S)</string>
+   </property>
+   <property name="iconText">
+    <string>保存(S）</string>
+   </property>
+  </action>
+  <action name="actionwindow">
+   <property name="text">
+    <string>新窗口(W)</string>
+   </property>
+  </action>
+  <action name="actionDateAndTime">
+   <property name="text">
+    <string>时间与日期</string>
+   </property>
+  </action>
+  <action name="actionsearch">
+   <property name="text">
+    <string>搜索(限英语)</string>
+   </property>
+  </action>
+  <action name="actioncopy">
+   <property name="text">
+    <string>复制(C)</string>
+   </property>
+  </action>
+  <action name="actioncut">
+   <property name="text">
+    <string>剪切</string>
+   </property>
+  </action>
+  <action name="actionpaste">
+   <property name="text">
+    <string>粘贴(V)</string>
+   </property>
+  </action>
+  <action name="actionpicture">
+   <property name="text">
+    <string>图片</string>
+   </property>
+  </action>
+  <action name="actionjuzhong">
+   <property name="text">
+    <string>居中对齐</string>
+   </property>
+  </action>
+  <action name="actionzuo">
+   <property name="text">
+    <string>左对齐</string>
+   </property>
+  </action>
+  <action name="actionyou">
+   <property name="text">
+    <string>右对齐</string>
+   </property>
+  </action>
+  <action name="actionsong">
+   <property name="text">
+    <string>宋体</string>
+   </property>
+  </action>
+  <action name="actionhei">
+   <property name="text">
+    <string>黑体</string>
+   </property>
+  </action>
+  <action name="actionkai">
+   <property name="text">
+    <string>楷体</string>
+   </property>
+  </action>
+  <action name="actiondejiacu">
+   <property name="text">
+    <string>dejiacu</string>
+   </property>
+  </action>
+  <action name="actionjiacu_2">
+   <property name="text">
+    <string>加粗</string>
+   </property>
+  </action>
+  <action name="actiondejiacu_2">
+   <property name="text">
+    <string>取消加粗</string>
+   </property>
+  </action>
+  <action name="actionxieti_2">
+   <property name="text">
+    <string>斜体</string>
+   </property>
+  </action>
+  <action name="actiondexieti">
+   <property name="text">
+    <string>取消斜体</string>
+   </property>
+  </action>
+  <action name="actionxiahuaxian_2">
+   <property name="text">
+    <string>下划线</string>
+   </property>
+  </action>
+  <action name="actiondexiahuaxian">
+   <property name="text">
+    <string>取消下划线</string>
+   </property>
+  </action>
+  <action name="actionred">
+   <property name="text">
+    <string>红色</string>
+   </property>
+  </action>
+  <action name="actionblue">
+   <property name="text">
+    <string>蓝色</string>
+   </property>
+  </action>
+  <action name="actiongreen">
+   <property name="text">
+    <string>绿色</string>
+   </property>
+  </action>
+  <action name="actiontelloe">
+   <property name="text">
+    <string>yellow</string>
+   </property>
+  </action>
+  <action name="action10">
+   <property name="text">
+    <string>10</string>
+   </property>
+  </action>
+  <action name="action12">
+   <property name="text">
+    <string>12</string>
+   </property>
+  </action>
+  <action name="action14">
+   <property name="text">
+    <string>14</string>
+   </property>
+  </action>
+  <action name="action1">
+   <property name="text">
+    <string>16</string>
+   </property>
+  </action>
+  <action name="action18">
+   <property name="text">
+    <string>18</string>
+   </property>
+  </action>
+  <action name="action20">
+   <property name="text">
+    <string>20</string>
+   </property>
+  </action>
+  <action name="action32">
+   <property name="text">
+    <string>32</string>
+   </property>
+  </action>
+  <action name="action64">
+   <property name="text">
+    <string>64</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

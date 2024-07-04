@@ -1,0 +1,10 @@
+<RCC>
+    <qresource prefix="/">
+        <file>mainIcons/表单.png</file>
+        <file>mainIcons/宠物.png</file>
+        <file>mainIcons/日历.png</file>
+        <file>mainIcons/选择时间段.png</file>
+        <file>mainIcons/_日历.png</file>
+        <file>mainIcons/首页 (4).png</file>
+    </qresource>
+</RCC>

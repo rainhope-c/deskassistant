@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>mainWindow</class>
+ <widget class="QMainWindow" name="mainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>750</width>
+    <height>500</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>750</width>
+    <height>500</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>记事本</string>
+  </property>
+  <widget class="QWidget" name="centralwidget"/>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>750</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu_F">
+    <property name="title">
+     <string>文件（F)</string>
+    </property>
+    <addaction name="actionxinjian"/>
+    <addaction name="separator"/>
+    <addaction name="actiontupian"/>
+    <addaction name="separator"/>
+    <addaction name="actiondakai"/>
+    <addaction name="separator"/>
+    <addaction name="actionxinchuangkou"/>
+    <addaction name="separator"/>
+    <addaction name="actionbaocun"/>
+    <addaction name="separator"/>
+    <addaction name="actionlingcunwei"/>
+    <addaction name="separator"/>
+    <addaction name="actiontuichu"/>
+   </widget>
+   <widget class="QMenu" name="menu_S">
+    <property name="title">
+     <string>编辑（S）</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menu_S_2">
+    <property name="title">
+     <string>工具（T）</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menu_O">
+    <property name="title">
+     <string>格式（O）</string>
+    </property>
+   </widget>
+   <addaction name="menu_F"/>
+   <addaction name="menu_S"/>
+   <addaction name="menu_S_2"/>
+   <addaction name="menu_O"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionxinjian">
+   <property name="text">
+    <string>新建（N）</string>
+   </property>
+  </action>
+  <action name="actiontupian">
+   <property name="text">
+    <string>图片</string>
+   </property>
+  </action>
+  <action name="actiondakai">
+   <property name="text">
+    <string>打开（O）</string>
+   </property>
+  </action>
+  <action name="actionxinchuangkou">
+   <property name="text">
+    <string>新窗口（O）</string>
+   </property>
+  </action>
+  <action name="actionbaocun">
+   <property name="text">
+    <string>保存(S)</string>
+   </property>
+  </action>
+  <action name="actionlingcunwei">
+   <property name="text">
+    <string>另存为</string>
+   </property>
+  </action>
+  <action name="actiontuichu">
+   <property name="text">
+    <string>退出</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
